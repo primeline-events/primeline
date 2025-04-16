@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeline Events | Premium Event Planning</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <div class="logo">
+                <img src="logo.png">
+                <h1>Primeline Events</h1>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">About</a></li>
+                    
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2>Crafting Unforgettable Experiences</h2>
+            <p>From intimate gatherings to grand celebrations, we transform your vision into reality with precision and elegance. Our comprehensive services include photography and videography to capture every magical moment.</p>
+            <div class="hero-btns">
+                <a href="#contact" class="btn">Plan Your Event</a>
+                <a href="#portfolio" class="btn btn-outline">View Portfolio</a>   
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Services</h2>
+                <p>We specialize in all types of events and celebrations</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="wedding-service.jpg">
+                    </div>
+                    <div class="service-content">
+                        <h3>Weddings</h3>
+                        <p>Breathtaking weddings tailored to your unique love story, with complete coordination and stunning photography.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="corporate-service.jpeg">
+                    </div>
+                    <div class="service-content">
+                        <h3>Corporate Events</h3>
+                        <p>Professional and impactful corporate gatherings that impress clients and motivate teams.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="birthday-service.jpg">
+                    </div>
+                    <div class="service-content">
+                        <h3>Birthday Celebrations</h3>
+                        <p>Memorable birthday parties for all ages, captured through our expert photography and videography.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="farewell-service.jpeg">
+                    </div>
+                    <div class="service-content">
+                        <h3>Farewell Party</h3>
+                        <p>"Creating heartfelt farewells that celebrate memories and new beginnings—because every goodbye deserves a special send-off!"</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="videography-service.jpeg">
+                    </div>
+                    <div class="service-content">
+                        <h3>Videography</h3>
+                        <p>Cinematic videography that tells the story of your event with emotion and artistry.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="custom-service.jpg">
+                    </div>
+                    <div class="service-content">
+                        <h3>Custom Events</h3>
+                        <p>Your imagination is our inspiration - we'll bring any event concept to life with flawless execution.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+                <p>Let's plan your perfect event</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>30 Ganesh nagar, Kolathur, <br>chennai 600099, tamilnadu india</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>(+91) 9884057301 <br>(+91) 9789938043</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>primelineevents@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Hours</h3>
+                            <p>Monday - Friday: 9am - 6pm<br>Saturday: 10am - 4pm</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="phone" name="phone" placeholder="Your Phone">
+                    </div>
+                    <div class="form-group">
+                        <select id="event-type" name="event-type">
+                            <option value="">Select Event Type</option>
+                            <option value="wedding">Wedding</option>
+                            <option value="corporate">Corporate Event</option>
+                            <option value="birthday">Birthday Party</option>
+                            <option value="photography">Photography Services</option>
+                            <option value="videography">Videography Services</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Portfolio</h2>
+                <p>Explore our recent work</p>
+                <p>Drive--    <a href="https://drive.google.com/drive/folders/1ssXLHLQ7lethONqTuOXmSHMFhlHz40sL?usp=sharing" target="_blank" rel="noopener noreferrer"><i class="fab fa-google-drive"></i></a>
+                </p>
+                </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="portfolio1.jpeg" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <h3>Sophisticated Wedding</h3>
+                        <p>Black tie affair with 300 guests</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="portfolio2.jpg" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <h3>Retreats</h3>
+                        <p>Team Gatherings</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="portfolio3.jpg" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <h3>Birthday</h3>
+                        <p>Harshi's 1st birthday celebration</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="portfolio4.jpeg" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <h3>Farewell Party</h3>
+                        <p>Vivekanandha Vidhyalaya batch 2025</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="portfolio5.jpg" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <h3>Event Behind Scenes</h3>
+                        <p>Wedding anniversary film</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="portfolio6.jpg" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <h3>Haldi</h3>
+                        <p>Indian tradition Function</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="section-title">
+                        <h2>About Us</h2>
+                    </div>
+                    <p>Founded with a passion for creating unforgettable experiences, Elegance Events has been transforming visions into reality for over a decade. Our team of expert planners, photographers, and videographers work seamlessly to ensure every detail is perfect.</p>
+                    <p>We specialize in all types of events - weddings, corporate functions, birthday celebrations, and custom gatherings. What sets us apart is our artistic approach to event design and our ability to capture the essence of each occasion through stunning photography and videography.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <h3>30+</h3>
+                            <p>Events Planned</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>100%</h3>
+                            <p>Client Satisfaction</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>100+</h3>
+                            <p>Enquires</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="about-team.jpeg" alt="Our Team">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Client Testimonials</h2>
+                <p>What our clients say about us</p>
+            </div>
+            <div class="testimonial-slider">
+                <div class="testimonial-slide active">
+                    <div class="testimonial-content">
+                        <p>"Elegance Events transformed our wedding into a fairy tale. Their attention to detail and stunning photography captured every special moment perfectly. We couldn't have asked for a better team!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <h4>Yuva & Jagadeesh</h4>
+                        <p>Wedding Clients</p>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <p>"Huge thanks to the event planning team for organizing such a smooth and enjoyable gathering! Everything from the venue to the activities was spot on and truly brought everyone together. We really appreciate your hard work and attention to detail — great job!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <h4>Navaneetha Santhosh</h4>
+                        <p>Marketing Director, TechMahindra</p>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <p>"Thank you so much for making our daughter's first birthday so special and memorable! Every detail was beautifully arranged, and the entire event ran smoothly from start to finish. We truly appreciate your creativity, professionalism, and care in bringing our vision to life."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <h4>Robert Joseph</h4>
+                        <p>Birthday Client</p>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <p>"Thank you for organizing such a heartfelt and well-coordinated farewell party! The ambiance, arrangements, and smooth flow of the event made it truly memorable. We appreciate your effort in capturing the emotions of the moment so perfectly."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <h4>Vivekanandha Students</h4>
+                        <p>Farewell Client</p>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <p>"Thank you for making our Haldi ceremony so joyful and memorable! The vibrant decor, seamless coordination, and thoughtful details brought everything together beautifully. We truly appreciate the effort and heart you put into every part of the celebration."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <h4>Pooja & Rahul</h4>
+                        <p>Haldi Client</p>
+                    </div>
+                </div>
+                <div class="testimonial-nav">
+                    <button class="testimonial-prev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="testimonial-next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logo2.jpg" alt="Elegance Events Logo">
+                    <h4>Primeline Events</h4>
+                    <p>Transforming visions into unforgettable experiences through exceptional event planning, photography, and videography.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Wedding Planning</a></li>
+                        <li><a href="#">Corporate Events</a></li>
+                        <li><a href="#">Birthday Parties</a></li>
+                        <li><a href="#">Photography</a></li>
+                        <li><a href="#">Videography</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Contact Us</h3>
+                    <div class="social-links">
+                        <a href="https://wa.me/9884057301?text=Hello%20I%20have%20a%20event%20enquiry"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/primeline.events?igsh=MWk0cDdsNHVjbXNneA=="><i class="fab fa-instagram"></i></a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=primelineevents@gmail.com"target="_blank"><i class="fas fa-envelope"></i></a>
+                    </div>
+                    <div class="newsletter">
+                        <h3>Newsletter</h3>
+                        <form id="newsletterForm">
+                            <input type="email" placeholder="Your Email" required>
+                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Primeline Events. All Rights Reserved.</p>
+                <div class="legal-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
