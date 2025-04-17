@@ -1,3 +1,27 @@
+// Loading Animation with Percentage
+document.addEventListener('DOMContentLoaded', function() {
+    const loadingOverlay = document.getElementById('loadingOverlay');
+    const loadingBar = document.getElementById('loadingBar');
+    const loadingPercentage = document.getElementById('loadingPercentage');
+
+    // Simulate loading progress (0% to 100%)
+    let progress = 0;
+    const interval = setInterval(() => {
+        progress += 1;
+        loadingBar.style.width = progress + '%';
+        loadingPercentage.textContent = progress + '%';
+
+        if (progress >= 100) {
+            clearInterval(interval);
+            setTimeout(() => {
+                loadingOverlay.classList.add('hidden');
+                setTimeout(() => {
+                    loadingOverlay.style.display = 'none';
+                }, 500);
+            }, 300); // Small delay before fade-out
+        }
+    }, 30); // Adjust speed (lower = faster)
+});
 document.addEventListener('DOMContentLoaded', function() {
   // Mobile Menu Toggle
   const mobileMenuBtn = document.getElementById('mobileMenuBtn');
